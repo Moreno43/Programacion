@@ -1,0 +1,4 @@
+ version OS: Windows 10 Home Single Language 
+ Nombre de Usuario: juanp 
+ Info Procesador: AMD Ryzen 5 3550H with Radeon Vega Mobile Gfx   
+ Memoria Total: 10
