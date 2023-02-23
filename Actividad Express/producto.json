@@ -1,0 +1,19 @@
+{
+    "productos" :[
+    {
+        "ID": 1,
+        "Nombre": "shampoo",
+        "Precio": 15000
+    },
+    {
+        "ID": 2,
+        "Nombre": "Cepillo de dientes",
+        "Precio": 5000
+    },
+    {
+        "ID": 3,
+        "Nombre": "",
+        "Precio": 15000
+    }
+    ]
+}

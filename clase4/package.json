@@ -1,0 +1,15 @@
+{
+  "name": "clase4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Express.js",
+  "scripts": {
+    "ej": "nodemon Express.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "morgan": "^1.10.0"
+  }
+}
