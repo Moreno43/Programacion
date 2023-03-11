@@ -1,26 +1,26 @@
 <template>
     <div>
         <h1>hola</h1>
-        <Img :items = "Items" />
+        <Img :items="Items" />
     </div>
 </template>
 
 <script>
 import Img from '@/components/Img.vue';
-import { defineComponent } from 'vue';
 
-export default defineComponent({
-    name: 'Img',
+export default {
+    name: "Img",
+
     components: {
         Img
     },
 
-    created(){
+    created() {
         this.cargarImagen();
     },
 
-    data(){
-        return{
+    data() {
+        return {
             Items: [],
         }
     },
@@ -29,7 +29,7 @@ export default defineComponent({
         cargarImagen: async function () {
             try {
                 const setting = {
-                    methods: 'GET',
+                    method: 'GET',
                 }
                 const url = "https://picsum.photos/v2/list?page=2&limit=100"
                 const data = await fetch(url, setting);
@@ -40,6 +40,6 @@ export default defineComponent({
             }
         }
     }
-    
-})
+
+}
 </script>

@@ -41,25 +41,10 @@
 
 <script>
 export default {
-    data() {
-        return {
-            items: [],
-            show: false,
-        };
-    },
-    methods: {
-        fetchData() {
-            fetch("https://picsum.photos/v2/list?page=2&limit=100")
-                .then((response) =>
-                    response.json().then((data) => {
-                        this.items = data;
-                    })
-                )
-                .catch((error) => console.log(error));
-        },
-    },
-    created() {
-        this.fetchData();
-    },
-};
+    props: ['items'],
+
+    data: () => ({
+        show: false,
+    }),
+}
 </script>
